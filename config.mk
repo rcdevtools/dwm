@@ -1,5 +1,5 @@
 # dwm version
-VERSION = 6.4.0-patch.2
+VERSION = 6.4.0-patch.3
 
 # Customize below to fit your system
 

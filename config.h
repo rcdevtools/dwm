@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -9,19 +9,24 @@ static const char *fonts[]          = {
 	"Hurmit Nerd Font:style=Regular:pixelsize=16"
 };
 
-static const char fg_norm[]      = "#fce8c3";
-static const char fg_sel[]       = "#f75341";
-static const char bg_norm[]      = "#1c1b19";
-static const char border_norm[]  = "#918175";
-static const char border_sel[]   = "#EF2F27";
+static const char fg_norm[]      = "#ded88d";
+static const char fg_sel[]       = "#ded88d";
+static const char bg_norm[]      = "#09141b";
+static const char border_norm[]  = "#17384c";
+static const char border_sel[]   = "#fca02f";
 static const char *colors[][3]      = {
 	/*               fg       bg          border   */
 	[SchemeNorm] = { fg_norm, bg_norm,    border_norm },
-	[SchemeSel]  = { fg_sel,  border_sel, border_sel },
+	[SchemeSel]  = { fg_sel,  border_norm, border_sel },
 };
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+
+static const unsigned int ulinepad	= 5;	/* horizontal padding between the underline and tag */
+static const unsigned int ulinestroke	= 4;	/* thickness / height of the underline */
+static const unsigned int ulinevoffset	= 0;	/* how far above the bottom of the bar the line should appear */
+static const int ulineall 		= 0;	/* 1 to show underline on all tags, 0 for just the active ones */
 
 static const Rule rules[] = {
 	/* xprop(1):
