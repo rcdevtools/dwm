@@ -53,3 +53,5 @@ and (re)compiling the source code.
 Patches
 -------
 - Restartsig patch <https://dwm.suckless.org/patches/restartsig/>
+- Ignore transient window patch
+  <https://dwm.suckless.org/patches/ignore_transient_windows/>
