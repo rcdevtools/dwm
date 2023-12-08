@@ -61,6 +61,7 @@ Patches
 - Extra bar patch <https://dwm.suckless.org/patches/extrabar/>
     - Custom status script showcasing how to use the extra bars.
 - Rainbow tags patch <https://dwm.suckless.org/patches/rainbowtags/>
+- Define custom set of app rules.
 
 Keybindings
 -----------

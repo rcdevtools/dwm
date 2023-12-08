@@ -52,8 +52,28 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor   ignoretransient */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1,       0 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1,       0 },
+	/* Rules for image processing... */
+	{ "gimp", NULL, NULL, 1 << 4, 1, -1, 0 },
+	{ "Gimp", NULL, NULL, 1 << 4, 1, -1, 0 },
+	{ "feh",  NULL, NULL, 1 << 4, 1, -1, 0 },
+
+	/* Rules for Word and PDF editing/viewing applications... */
+	{ "libreoffice", NULL, NULL, 1 << 3, 0, -1, 0 },
+	{ "okular",      NULL, NULL, 1 << 3, 0, -1, 0 },
+
+	/* Rules for ST... */
+	{ "st-256color", NULL, "mutt", 1 << 2, 0, -1, 0 },
+	{ "st-256color", NULL, "st",   0,      0, -1, 0 },
+	{ "st-256color", NULL, "tmux", 0,      0, -1, 0 },
+
+	/* Music audio...*/
+	{ "pavucontrol", NULL, NULL,   1 << 6, 0, -1, 0 },
+	{ "Pavucontrol", NULL, NULL,   1 << 6, 0, -1, 0 },
+	{ "st-256color", NULL, "cmus", 1 << 6, 0, -1, 0 },
+
+	/* Rules for Firefox web browser... */
+	{ "firefox",  NULL, NULL, 1 << 1, 0, -1, 0 },
+	{ "Firefox",  NULL, NULL, 1 << 1, 0, -1, 0 },
 };
 
 /* layout(s) */
