@@ -14,10 +14,10 @@ static const char *fonts[]          = {
 	"Hurmit Nerd Font:style=Regular:pixelsize=16"
 };
 
-static const char fg_norm[]      = "#ded88d";
-static const char fg_sel[]       = "#ded88d";
+static const char fg_norm[]      = "#deb88d";
+static const char fg_sel[]       = "#deb88d";
 static const char bg_norm[]      = "#09141b";
-static const char border_norm[]  = "#17384c";
+static const char border_norm[]  = "#0f2532";
 static const char border_sel[]   = "#fca02f";
 static const char *colors[][3]      = {
 	/*               fg       bg          border   */
@@ -32,6 +32,19 @@ static const unsigned int ulinepad	= 5;	/* horizontal padding between the underl
 static const unsigned int ulinestroke	= 4;	/* thickness / height of the underline */
 static const unsigned int ulinevoffset	= 0;	/* how far above the bottom of the bar the line should appear */
 static const int ulineall 		= 0;	/* 1 to show underline on all tags, 0 for just the active ones */
+
+static const char *tagsel[][2] = {
+	{ "#019a4b", "#0f2532" },
+	{ "#027c9b", "#0f2532" },
+	{ "#d15123", "#0f2532" },
+	{ "#fca02f", "#0f2532" },
+	{ "#6b23cf", "#0f2532" },
+	{ "#00fecd", "#0f2532" },
+	{ "#d18469", "#0f2532" },
+	{ "#dedede", "#0f2532" },
+	{ "#deb88d", "#0f2532" },
+};
+
 
 static const Rule rules[] = {
 	/* xprop(1):
