@@ -62,6 +62,7 @@ Patches
     - Custom status script showcasing how to use the extra bars.
 - Rainbow tags patch <https://dwm.suckless.org/patches/rainbowtags/>
 - Define custom set of app rules.
+- Full gaps patch <https://dwm.suckless.org/patches/fullgaps/>.
 
 Keybindings
 -----------
@@ -114,6 +115,9 @@ MMB is middle mouse click.
 | MODKEY + [1-9]         | Change to tag based on number.                      |
 | MODKEY + q             | Restart DWM.                                        |
 | MODKEY + SHIFT q       | Exit DWM.                                           |
+| MODKEY + -             | Decrease gaps between windows.                      |
+| MODKEY + +             | Increase gaps between windows.                      |
+| MODKEY + SHIFT + =     | Reset gaps between windows.                         |
 | LMB on layout symbol   | Toggle previous layout.                             |
 | RMB on layout symbol   | Switch to monicle mode.                             |
 | MMB on status text     | Open a terminal.                                    |
